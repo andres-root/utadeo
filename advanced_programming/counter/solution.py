@@ -23,14 +23,16 @@ class Counter:
         return self.get_count()
 
     def __repr__(self):
-        return 'Counter is: {}'.format(self.counter)
+        return 'Counter is: {}'.format(self.count)
     
     def __str__(self):
-        return 'Counter is: {}'.format(self.counter)
+        return 'Counter is: {}'.format(self.count)
 
 
 
 if __name__ == '__main__':
     counter = Counter()
+    counter.increment()
+    print(counter)
     counter.increment()
     print(counter)
